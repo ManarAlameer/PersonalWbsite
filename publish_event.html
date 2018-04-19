@@ -23,23 +23,27 @@
 			<section class="images1">
 				<h1> Publish New Event</h1>
 			</section>
-       <form method="post" action="mailto:me@mysite.com">
-    <h3>Enter Name:</h3>
-    <input type="text" name="name" />
-
-    <h3>Enter Email:</h3>
-    <input type="text" name="email" />
-
-    <h3>How do you like my website?</h3>
-    <input type="radio" name="website_poll" value="love_it" /> Love it. <br/>
-    <input type="radio" name="website_poll" value="like_it" /> Like it. <br/>
-    <input type="radio" name="website_poll" value="Blaahhh" /> Blaahhh. <br/>
-
-    <h3>Leave a Comment</h3>
-    <textarea name="comments" rows="6" cols="40">Your message here.</textarea>
+            <!-- Start with form tag since I'll start the form -->
+                
+     <form id='form' method = 'post' onsubmit="return results();">
+         <h3> Event's Name:</h3>
+         <input typre="text" name="name" />
+              <h3>Email for communicatiom:</h3>
+         <input typre="text" name="Email" />
+                  <h3> test</h3>
+         <input type="radio" name="website_pull" value="yes" /> Yes. <br/>
+         <input type="radio" name="website_pull" value="No" /> No. <br/>
+         <input type="radio" name="website_pull" value="In between." /> In between. <br/>
+                  <h3>Describtion(optional)</h3>
+         <textarea name="describtion" rows="8" cols="60">Your describtion here.</textarea>
         <br/>
-    <input type="submit" value="Send Form Data Now!" />
-</form>
+
+                   <input type="publish" value="publish"
+
+        </form> 
+         <!-- * -->
+         
+
 		<footer>
 				<nav>
 					
