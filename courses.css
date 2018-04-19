@@ -105,15 +105,15 @@ main{
 }
 
 #column1{
-	width: 400px;
+	width: 700px;
 }
 
 #column2{
-	width:400px;
+	width:700px;
 }
 
 #column3{
-	width:400px;
+	width:700px;
 }
 
 .center section {
@@ -216,7 +216,7 @@ a:link{
 	text-decoration: none;
 }
 a:visited{
-	color: #EC8A42;
+	color: #731585;
 }
 a:hover{
 	color: #A2E2DB;
