@@ -25,24 +25,42 @@
 			</section>
             <!-- Start with form tag since I'll start the form -->
                 
-     <form id='form' method = 'post' onsubmit="return results();">
+     <form onsubmit="return results();" id='form' method = 'post' >
          <h3> Event's Name:</h3>
-         <input typre="text" name="name" />
+         <input id="name" type="text" name="name" />
               <h3>Email for communicatiom:</h3>
-         <input typre="text" name="Email" />
+         <input id="email" type="text" name="Email" />
                   <h3> test</h3>
-         <input type="radio" name="website_pull" value="yes" /> Yes. <br/>
-         <input type="radio" name="website_pull" value="No" /> No. <br/>
-         <input type="radio" name="website_pull" value="In between." /> In between. <br/>
+         <input id="poll1" type="radio" name="website_pull" value="yes" /> Yes. <br/>
+         <input id="poll2" type="radio" name="website_pull" value="No" /> No. <br/>
+         <input id="poll3" type="radio" name="website_pull" value="In between." /> In between. <br/>
                   <h3>Describtion(optional)</h3>
-         <textarea name="describtion" rows="8" cols="60">Your describtion here.</textarea>
+         <textarea id="describtion" name="describtion" rows="8" cols="60">Your describtion here.</textarea>
+        <br/>
+         
         <br/>
 
-                   <input type="publish" value="publish"
+                   <input id="publish" type="publish" value="publish"
 
         </form> 
          <!-- * -->
+     <script>
          
+         function results()
+         }
+         var name=document.getElementById('name').value;
+          var email=document.getElementById('email').value;
+         document.write("<h3> You event is successfuly published </h3>");
+         document.write("<h3>Below is the your published event information</h3>");
+         document.write(name + "<br/>");
+         document.write(email + "<br/>");
+
+         }
+         
+         
+         
+         
+         </script>    
 
 		<footer>
 				<nav>
