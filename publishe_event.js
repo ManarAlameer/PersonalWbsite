@@ -1,4 +1,3 @@
-<script>
 var name; 
 var email; 
 function getFirstName() {
@@ -17,4 +16,3 @@ function display() {
     document.getElementById("form").submit();
 
 } 
-</script>
