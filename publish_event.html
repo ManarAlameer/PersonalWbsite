@@ -3,11 +3,8 @@
 		<title>Manar's Website</title>
 		<meta charset="utf-8"/>
 		<link type="text/css" rel="stylesheet" href="courses.css" />
-		<script src="PersonalWbsite/publishe_event.js"></script>
-
 	</head>
 	<body>
-				<script src="PersonalWbsite/publishe_event.js.js"></script>
 		<header id="header2">
 			<nav>
 				<ul>
@@ -29,7 +26,25 @@
   <form id='form' method = 'post'>
     <p> Event's Name: <input type='text' id = "name"/></p>
     <p> Contact via Email: <input type='text' id = "email"/> </p>
-    <p><input id ="submit" type = "button" onclick="display()" value='Publish'/></p>
+   
+     <h3>How do you like my website?</h3>
+    <input id="poll1" type="radio" name="website_poll" value="love_it" /> Love it. <br/>
+    <input id="poll2" type="radio" name="website_poll" value="like_it" /> Like it. <br/>
+    <input id="poll3" type="radio" name="website_poll" value="Blaahhh" /> Blaahhh. <br/>
+    
+    <h3>Checkbox:</h3>
+
+
+     <input id="check1" type="checkbox" name="check1" value="Bike"> I have a bike<br>
+  <input id="check2" type="checkbox" name="check2" value="Car" > I have a car<br>
+
+<h3>Describtion:</h3>
+    <textarea id="describtion" name="describtion" rows="6" cols="40">Please write your describtion here.</textarea>
+        <br/>
+
+    
+     <p><input id ="submit" type = "button" onclick="display()" value='clickme'/></p>
+
 </form>
     
 		<footer>
