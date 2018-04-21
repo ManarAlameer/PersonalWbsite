@@ -2,7 +2,7 @@
 	<head>
 		<title>Manar's Website</title>
 		<meta charset="utf-8"/>
-        				<script src="publishe_event.js"></script>
+                    <link type="text/css" rel="stylesheet" href="CSS/style.css" />
 
 	</head>
 	<body>
@@ -13,26 +13,28 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About Me</a></li>
 					<li><a href="courses.html">My Courses</a></li>
+                    <li><a href="publish_event.html">Publish Event</a></li>
+
 				</ul>
 			</nav>
 			<div id="logo">
-				<a href="index.html"><img class="displayed" src="http://www.i2symbol.com/images/symbols/style-letters/circled_latin_capital_letter_m_u24C2_icon_256x256.png" alt="Bb photodesign logo"/></a>
+				<a href="index.html"><img class="displayed" src="http://www.i2symbol.com/images/symbols/style-letters/circled_latin_capital_letter_m_u24C2_icon_256x256.png" alt="Manar"/></a>
 			</div>
 		</header>
 <!-- Title -->
 		<main class="layout2">
 			<section class="images1">
-				<h1> Publish New Event</h1>
+				<h1> Publish New Event<br/></h1>
 			</section>
             <!-- Start with form tag since I'll start the form -->
   <form id='form' method = 'post'>
-    <p> Event's Name: <input type='text' id = "name"/></p>
-    <p> Total Event Capacity: <input type='text' id = "capacity"/> </p>
-       <p> Price: <input type='text' id = "price"/> </p>
-       <p> Time: <input type='text' id = "time"/> </p>
+    <p><br/>Event's Name:<br/><input type='text' id = "name"/></p>
+    <p> Total Event Capacity:<br/> <input type='text' id = "capacity"/> </p>
+       <p> Price:<br/> <input type='text' id = "price"/> </p>
+       <p> Time:<br/> <input type='text' id = "time"/> </p>
 
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 date">
-        <label class="col-lg-5 col-md-6 col-sm-6 col-xs-12">Date: </label>
+        <label class="col-lg-5 col-md-6 col-sm-6 col-xs-12">Date: <br/><br/></label>
                <select id="date">
                  <option value="0">--Day--</option>
                  <option value="1">1</option>
@@ -95,11 +97,11 @@
       </div>
       
 
-     <p>Cancellation Allowd?<p>
+     <p>Cancellation Allowd?<br/><p>
     <input id="poll1" type="radio" name="website_poll" value="Yes" />Yes <br/>
     <input id="poll2" type="radio" name="website_poll" value="No" /> No <br/>
     
-    <p>Gender:<p>
+    <p>Gender:<br/><p>
 
 
      <input id="check1" type="checkbox" name="check1" value="Femal"> Female<br>
@@ -107,12 +109,13 @@
       
       
    
-<h3>Describtion:</h3>
+<p>Describtion:<br/><p>
     <textarea id="describtion" name="describtion" rows="6" cols="40">Please write your describtion here.</textarea>
         <br/>
 
     
-     <p><input id ="submit" type = "button" onclick="display()" value='publish'/></p>
+           <p><input id ="submit" class="btn" type = "button" onclick="display()" value='publish'/></p>
+
 
 </form>
             
@@ -173,13 +176,13 @@ function getMonth()
             {
             
                  Month = document.getElementById("Month");
-return  Month.options[date.selectedIndex].value   
+return  Month.options[Month.selectedIndex].value   
             }
                  function getYear()
             {
             
                  Year = document.getElementById("Year");
-return  Year.options[date.selectedIndex].value   
+return  Year.options[Year.selectedIndex].value   
             }
 function display() {
     name = getFirstName();
