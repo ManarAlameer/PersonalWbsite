@@ -5,35 +5,22 @@ body{
 	color: #fff;
 	margin: 0px;
 	min-width: 1400px;
-}
-/* home page teal area at the top that scrolls.*/
-#top {
-	background-image: url("images/overlay.png");
-	padding: 0px 0px 600px;
-	width: 100%;
+	font: sans-serif !important;
 }
 
-header, main{
-	position: relative;
-}
-
-header{
-	z-index: 3;	
-}
-
-
-/* header on every page */
 header nav{
 	position: fixed;
-	background-color: #000;
-	opacity: .6;
+	background-color: #7c43d6;
+	/* opacity: .6; */
 	width: 100%;
+	color: white;
 }
 
 ul{
 	width: 800px;
 	margin: auto;
 	padding: 15px 0 15px 0;
+	/* background:  #fff; */
 	text-align: center;
 }
 
@@ -55,7 +42,7 @@ header a:link{
   color: #fff;
 }
 header a:visited{
-  color: #00514A;
+  color: #dbe6e5;
 }
 header a:hover{
   color: #ebc4a8;
@@ -64,75 +51,11 @@ header a:active{
   color: #117f73;
 }
 
-/*****************************************/
 
-div {
-	text-align: center;
-	z-index: -1;
-}
-
-/* large logo on homepage that scrolls with the teal area */
-
-#home img{
-	padding: 300px 0 0;
-}
-
-#home p{
-	font-family: 'Raleway', sans-serif;
-	font-size: 40px; 
-	margin: -10px 20px 0 0;
-}
-
-/*****************************************/
-
-main{
-	background-color: #fff;
-	min-width: 800px;
-	z-index: 1;
-}
-
-/* home page columns of images */
-
-.center{
-	text-align: center;
-	width: 1300px;
-	margin: auto;
-	margin-top: -110px;
-}
-
-.center a:hover{
-	opacity: .65;
-}
-
-#column1{
-	width: 700px;
-}
-
-#column2{
-	width:700px;
-}
-
-#column3{
-	width:700px;
-}
-
-.center section {
-	display: inline-block;
-	padding: 10px;
-	margin: -20px 0 80px;
-}
-
-section img {
-	margin: 10px;
-}
-/*****************************************/
-
-/* thinner teal top bar that appears after scrolling through the big teal area */
 
 #header2{
-	background-image:url("images/overlay.png");
 	position: fixed;
-	height: 170px;
+	height: 120px;
 	padding: 0px;
 	width: 100%;
 	top: 0px;
@@ -140,72 +63,53 @@ section img {
 	min-width: 850px;
 }
 
+/*logo position*/
 #logo img{
-	padding: 70px 0 0; 
+	padding: 70px 0 0 ; 
+      position: relative;
 	height: 65px;
 }
 
-#logo p{
-	font-family: 'Raleway', sans-serif;
-	font-size: 10px;
-	padding: 0 0 40px;
-	margin: -5px 0 0 0;
-}
 
-#logo a{
-	font-size: 13px;
-	color: #fff;
-	font-size: 7px;
-}
-
-/*****************************************/
-
-/* this is for my content pages */
 
 h1{
 	font-family: 'Raleway', sans-serif;
-	padding: 100px 0px 0px 10px;
-	color: #000;
-	font-size: 60px;
+	color: #117f73;
+	font-size: 48px;
 }
 
-
+/*change schedule position*/
 .layout2{
 	background-color: #fff;
-	padding: 10px 0px 100px 0px;
+	padding: 10px 60px 100px 0px;
 	width: 1300px;
-	margin: auto;
+	margin:auto;
 }	
 
 /* this is for the images on those content pages */
 
 .layout2 section {
 	display: inline-block;
-	padding: 10px 40px 0 30px;
+    /*change the position of ksu logo & my course title*/
+	padding: 90px 400px 0 120px;
+    
 	margin-bottom: -7px;	
 }
 
+#logo img{
+	padding: 70px 0 0 ; 
+      position: relative;
+    left: 610px;
+	height: 65px;
+}
+
 .images1 img{
-	width: 300px;
-	
+	width: 212px;
 }
 
-.text{
-	width: 600px;
-	
-}
 
-.text h3{
-	font-family: 'Raleway', sans-serif;
-	color: #000;
-	font-size: 29px;
-}
 
-.text p{
-	font-family: 'Josefin Slab', serif;
-	color: #000;
-	font-size: 24px;
-}
+
 
 /*****************************************/
 
@@ -227,109 +131,19 @@ a:active{
 
 /*****************************************/
 
-/* This is for my contact page */
 
-#contact{
-	background: url("images/mushroom.jpg") no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
 
-h4{
-	text-align: center;
-	color: #fff;
-	font-family: 'Raleway', sans-serif;
-	font-size: 30px;
-	width: 700px;
-	margin: auto;
-	padding: 350px 0 0 0;
 	
-}
-
-form{
-	text-align: center;
-	padding: 70px 0 500px 0;
-	width: 650px;
-	margin: auto;
-	
-}
-
-form input{
-	width: 150px;
-	text-align: center;
-	padding: 20px 0px;
-	margin: 15px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
-	border: 2.5px solid #EBC4A8;
-	border-radius: 5px;
-	background-color: #fff;
-}
-
-/*****************************************/
-
-/* This is for my footer */
-
-footer{
-	margin: auto;
-	width: 100%;
-}
-
-footer ul{
-	width: 800px;
-	margin: auto;
-}
-
-footer li{
-	display: inline-block; 
-	padding: 0 12px;
-}
-
-footer a {
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  font-size: 12px;
-}
-
-footer a:link{
-  color: #117f73;
-}
-footer a:visited{
-  color: #00514A;
-}
-footer a:hover{
-  color: #ebc4a8;
-}
-footer a:active{
-  color: #A2E2DB;
-}
-	
-
-		/* span with .serious class: set font to Impact */
-		span.serious {
-			font-family: "Impact";
-		}
-
-		/* span with .silly class: set font to Comic Sans */
-		span.silly {
-			font-family: "Comic Sans MS";
-		}		
-
-		/* Put the image on the right */
-		#photo { float: right; }
-
 		/* Table Style! */
 		/* Put borders around the cells */
-		th, td { border: solid 1px black; }
+		th, td {border: solid 1px #000;}
 		/* Collapse or 'merge' the borders into each other*/
-		table { border-collapse: collapse; }
+		table {border-collapse: collapse;font-family:  sans-serif;/* padding:  5px; */}
 
 		/* Color every other row (tr) light grey */
 		tr:nth-child(even) {
-			background:rgb(220,220,220);
+			background: rgb(255, 255, 255);
+			color:  black;
 		}
 
 		/* Color green the text of currentlytaking rows */
@@ -339,8 +153,10 @@ footer a:active{
 
 		/* Align and style the "For Credit" and "Listener" cells */
 		th, td.enrollheader {
-			background-color:grey;
+			background-color: #7c43d6;
 			text-align:center;
+			color:  #fff;
 			font-weight:bold;
+			padding: 10px;
 		}
 
