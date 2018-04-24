@@ -1,13 +1,18 @@
+/* global document*/ 
+/* global localStorage*/ 
+/* global window*/ 
 
 
 var name; 
-                var time; 
+var time; 
 var price; 
 var capacity; 
 var RadioResult; 
 var describtion;
 var check;
  var date;
+ var date2;
+
 var Month;
                  var Year;
 function getFirstName() {
@@ -75,35 +80,53 @@ function display() {
     Year=getYear();
     time=getTime();
    price=getPrice();
+	
+	localStorage.setItem("name", name);
+		localStorage.setItem("capacity", capacity);
 
+			localStorage.setItem("RadioResult", RadioResult);
+
+				localStorage.setItem("check", check);
+
+					localStorage.setItem("describtion", describtion);
+
+						localStorage.setItem("date2", date2);
+
+							localStorage.setItem("Month", Month);
+
+								localStorage.setItem("Year", Year);
+								localStorage.setItem("time", time);
+								localStorage.setItem("price", price);
+
+							     document.write("Thank you for publishing the following event <br/>");
+	
+	window.location.replace("display.html")
     
-    document.write("Thank you for publishing the following event <br/>");
 
-   document.write("Event's Name: <br/>");
-     document.write(name);
-   document.write("<br/><br/>Total Event Capacity:<br/>");
-     document.write(capacity);
-       document.write("<br/><br/>Time:<br/>");
-     document.write(time);  
-    document.write("<br/><br/>Price:<br/>");
-     document.write(price);
-document.write("<br/><br/>Cancellation Allowd?<br/>");
- document.write(RadioResult);
-   document.write("<br/><br/>Gender: <br/>");
-     document.write(check);
+   // document.write("Event's Name: <br/>");
+     // document.write(name);
+   // document.write("<br/><br/>Total Event Capacity:<br/>");
+     // document.write(capacity);
+       // document.write("<br/><br/>Time:<br/>");
+     // document.write(time);  
+    // document.write("<br/><br/>Price:<br/>");
+     // document.write(price);
+// document.write("<br/><br/>Cancellation Allowd?<br/>");
+ // document.write(RadioResult);
+   // document.write("<br/><br/>Gender: <br/>");
+     // document.write(check);
     
-       document.write("<br/><br/>Date: <br/>");
-document.write(date2)
-    document.write("/")
-    document.write(Month)
-        document.write("/")
-    document.write(Year)
+       // document.write("<br/><br/>Date: <br/>");
+// document.write(date2)
+    // document.write("/")
+    // document.write(Month)
+        // document.write("/")
+    // document.write(Year)
 
 
 
-document.write("<br/><br/>Describtion<br/>");
- document.write(describtion);
-    document.getElementById("form").submit();
+// document.write("<br/><br/>Describtion<br/>");
+ // document.write(describtion);
+    // document.getElementById("form").submit();
 
 } 
-
