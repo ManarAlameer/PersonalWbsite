@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Josefin+Slab);
+
+
+
+.inline {
+		    display: inline-block;
+
+		}
+
+body{
+	color: #00;
+	margin: 0px;
+	min-width: 1400px;
+	font-family3 'Arial', sans-serif;
+	font-size: 21px;
+}
+
+header{
+	z-index: 3;	
+}
+/* thinner teal top bar that appears after scrolling through the big teal area */
+
+#header2{
+	/*background-image:url("images/overlay.png");*/
+	position: fixed;
+	height: 170px;
+	padding: 0px;
+	width: 100%;
+	top: 0px;
+	z-index: 2;
+	min-width: 850px;
+}
+
+#logo img{
+	padding: 70px 0 0 ; 
+      position: relative;
+    left: 650px;
+	height: 65px;
+}
+
+
+/* header on every page */
+header nav{
+	position: fixed;
+	background-color: #7c43d6;
+	/* opacity: .6; */
+	width: 100%;
+	color: white;
+}
+
+ul{
+	width: 800px;
+	margin: auto;
+	padding: 15px 0 15px 0;
+	/* background:  #fff; */
+	text-align: center;
+}
+
+header li{
+	display: inline-block; 
+	padding: 0 40px;
+	font-size: 17px;
+}
+
+
+
+header a, #header2 a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+header a:link{
+  color: #fff;
+}
+header a:visited{
+  color: #dbe6e5;
+}
+header a:hover{
+  color: #ebc4a8;
+}
+header a:active{
+  color: #117f73;
+}
+
+
+
+/*****************************************/
+#logo img{
+	padding: 70px 0 0 ; 
+      position: relative;
+    left: 610px;
+	height: 65px;
+}
+
+
+/* large logo on homepage that scrolls with the teal area */
+
+
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	padding: 150px 0px 0px 0px;
+	color: #117f73;
+	font-size: 40px;
+    margin-left: 55;
+
+}
+
+
+ h3{
+	font-family: 'Raleway', sans-serif;
+	color: #000;
+	font-size: 24px;
+      position: relative;
+    left: 60px;
+}
+
+p{
+	font-family: 'Josefin Slab', serif;
+	color: #000;
+	font-size: 24px;
+    position: relative;
+    left: 60px;
+    margin:auto
+}
