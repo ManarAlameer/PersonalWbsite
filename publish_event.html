@@ -2,7 +2,8 @@
 	<head>
 		<title>Manar's Website</title>
 		<meta charset="utf-8"/>
-                    <link type="text/css" rel="stylesheet" href="CSS/style.css" />
+                        <script src="JS/publishe_event.js"></script>
+				 <link type="text/css" rel="stylesheet" href="CSS/publish_event.css" />
 
 	</head>
 	<body>
@@ -28,14 +29,13 @@
 			</section>
             <!-- Start with form tag since I'll start the form -->
   <form id='form' method = 'post'>
-    <p><br/>Event's Name:<br/><input type='text' id = "name"/></p>
-    <p> Total Event Capacity:<br/> <input type='text' id = "capacity"/> </p>
-       <p> Price:<br/> <input type='text' id = "price"/> </p>
-       <p> Time:<br/> <input type='text' id = "time"/> </p>
+    <h3><br/>Event's Name:<br/><input type='text' id = "name"/></h3>
+    <h3> Total Event Capacity:<br/> <input type='text' id = "capacity"/> </h3>
+       <h3> Price:<br/> <input type='text' id = "price"/> </h3>
+       <h3> Time:<br/> <input type='text' id = "time"/> </h3>
 
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 date">
-        <label class="col-lg-5 col-md-6 col-sm-6 col-xs-12">Date: <br/><br/></label>
-               <select id="date">
+        <h3 >Date: <br/><br/></h3>
+       <layou3> <select id="date"> </layou3>
                  <option value="0">--Day--</option>
                  <option value="1">1</option>
                  <option value="2">2</option>
@@ -94,141 +94,30 @@
 
           </select>
        <span></span>
-      </div>
       
 
-     <p>Cancellation Allowd?<br/><p>
-    <input id="poll1" type="radio" name="website_poll" value="Yes" />Yes <br/>
-    <input id="poll2" type="radio" name="website_poll" value="No" /> No <br/>
+     <h3>Cancellation Allowd?<br/><h3>
+    <h4><input id="poll1" type="radio" name="website_poll" value="Yes" />Yes <br/></h4>
+    <h4> <input id="poll2" type="radio" name="website_poll" value="No" /> No <br/></h4>
     
-    <p>Gender:<br/><p>
+    <h3>Gender:<br/><h3>
 
 
-     <input id="check1" type="checkbox" name="check1" value="Femal"> Female<br>
-  <input id="check2" type="checkbox" name="check2" value="Male" > Male<br>
+    <h4> <input id="check1" type="checkbox" name="check1" value="Female">Female<br></h4>
+ <h4><input id="check2" type="checkbox" name="check2" value="Male" > Male<br></h4> 
       
       
    
-<p>Describtion:<br/><p>
-    <textarea id="describtion" name="describtion" rows="6" cols="40">Please write your describtion here.</textarea>
-        <br/>
+<h3>Description:<br/><h3>
+    <textarea id="describtion" name="describtion" rows="6" cols="40">Please write your description here.</textarea>
+        <br/> 
 
     
-           <p><input id ="submit" class="btn" type = "button" onclick="display()" value='publish'/></p>
+           <p><input id ="submit" class="btn" type = "button" onclick="display()" value='Publish'/></p>
 
 
 </form>
             
-             <script>   
-var name; 
-                var time; 
-var price; 
-var capacity; 
-var RadioResult; 
-var describtion;
-var check;
- var date;
-var Month;
-                 var Year;
-function getFirstName() {
-    return document.getElementById("name").value;
-}
-function getCap() {
-    return document.getElementById("capacity").value;
-}
-                 function getTime() {
-    return document.getElementById("time").value;
-}function getPrice() {
-    return document.getElementById("price").value;
-}
-function getButtonRadio()
-{
-  if(document.getElementById("poll1").checked)
-    return document.getElementById("poll1").value; 
-    if(document.getElementById("poll2").checked)
-    return document.getElementById("poll2").value; 
-   
-}
-function getCheck()
-{
-  if(document.getElementById("check1").checked && document.getElementById("check2").checked)
-     { 
-    check=document.getElementById("check1").value+" and "+ document.getElementById("check2").value
-    return check;   
-    }
-      if(document.getElementById("check1").checked)
-    return document.getElementById("check1").value; 
-    if(document.getElementById("check2").checked)
-    return document.getElementById("check2").value; 
-}
-function getDesc()
-{
-      return document.getElementById("describtion").value;
-
-}
- function getDate()
-            {
-            
-                 date = document.getElementById("date");
-return  date.options[date.selectedIndex].value   
-            }
-function getMonth()
-            {
-            
-                 Month = document.getElementById("Month");
-return  Month.options[Month.selectedIndex].value   
-            }
-                 function getYear()
-            {
-            
-                 Year = document.getElementById("Year");
-return  Year.options[Year.selectedIndex].value   
-            }
-function display() {
-    name = getFirstName();
-    capacity = getCap();
-  RadioResult=getButtonRadio();
-  check=getCheck();
-  describtion=getDesc();
-    date2=getDate();
-    Month=getMonth();
-    Year=getYear();
-    time=getTime();
-   price=getPrice();
-
-    
-    document.write("Thank you for publishing the following event <br/>");
-
-   document.write("Event's Name: <br/>");
-     document.write(name);
-   document.write("<br/><br/>Total Event Capacity:<br/>");
-     document.write(capacity);
-       document.write("<br/><br/>Time:<br/>");
-     document.write(time);  
-    document.write("<br/><br/>Price:<br/>");
-     document.write(price);
-document.write("<br/><br/>Cancellation Allowd?<br/>");
- document.write(RadioResult);
-   document.write("<br/><br/>Gender: <br/>");
-     document.write(check);
-    
-       document.write("<br/><br/>Date: <br/>");
-document.write(date2)
-    document.write("/")
-    document.write(Month)
-        document.write("/")
-    document.write(Year)
-
-
-
-document.write("<br/><br/>Describtion<br/>");
- document.write(describtion);
-    document.getElementById("form").submit();
-
-} 
-
-</script>
-    
 		<footer>
 				<nav>
 					
